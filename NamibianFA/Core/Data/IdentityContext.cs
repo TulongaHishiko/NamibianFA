@@ -1,4 +1,4 @@
-﻿using CenoredIMS.Domain.Entities;
+﻿using NamibianFA.Domain.Entities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CenoredIMS.Core.Data
+namespace NamibianFA.Core.Data
 {
     public class IdentityContext : IdentityDbContext<User>
     {

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using NamibianFA.Domain.Abstract;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -18,5 +19,6 @@ namespace NamibianFA.Domain.Entities
         public string FirstName { get; set; }
         [Required]
         public string Surname { get; set; }
+        public UserRoleEnum Role { get; set; }
     }
 }

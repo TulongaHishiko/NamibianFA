@@ -1,6 +1,6 @@
-﻿using CenoredIMS.Core.Data;
-using CenoredIMS.Core.Interfaces;
-using CenoredIMS.Domain.Abstract;
+﻿using NamibianFA.Core.Data;
+using NamibianFA.Core.Interfaces;
+using NamibianFA.Domain.Abstract;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace CenoredIMS.Core.Repositories
+namespace NamibianFA.Core.Repositories
 {
     public class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
     {

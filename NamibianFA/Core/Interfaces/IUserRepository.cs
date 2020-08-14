@@ -1,12 +1,12 @@
-﻿using CenoredIMS.Domain.Abstract;
-using CenoredIMS.Domain.Entities;
+﻿using NamibianFA.Domain.Abstract;
+using NamibianFA.Domain.Entities;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CenoredIMS.Core.Interfaces
+namespace NamibianFA.Core.Interfaces
 {
     public interface IUserRepository
     {

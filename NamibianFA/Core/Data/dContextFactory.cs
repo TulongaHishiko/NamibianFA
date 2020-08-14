@@ -1,4 +1,4 @@
-﻿using CenoredIMS.Domain.Settings;
+﻿using NamibianFA.Domain.Settings;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using System;
@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CenoredIMS.Core.Data
+namespace NamibianFA.Core.Data
 {
     public class dContextFactory : IDesignTimeDbContextFactory<dContext>
     {

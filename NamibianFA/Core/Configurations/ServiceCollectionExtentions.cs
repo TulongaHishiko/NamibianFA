@@ -1,10 +1,10 @@
-﻿using CenoredIMS.Core.Data;
-using CenoredIMS.Core.Interfaces;
-using CenoredIMS.Core.Repositories;
-using CenoredIMS.Domain.Abstract;
-using CenoredIMS.Domain.Entities;
-using CenoredIMS.Domain.Settings;
-using CenoredIMS.Utilities;
+﻿using NamibianFA.Core.Data;
+using NamibianFA.Core.Interfaces;
+using NamibianFA.Core.Repositories;
+using NamibianFA.Domain.Abstract;
+using NamibianFA.Domain.Entities;
+using NamibianFA.Domain.Settings;
+using NamibianFA.Utilities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -13,7 +13,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CenoredIMS.Core.Configurations
+namespace NamibianFA.Core.Configurations
 {
     public static class ServiceCollectionExtentions
     {

@@ -1,19 +1,19 @@
-﻿using CenoredIMS.Core.Data;
-using CenoredIMS.Domain.Abstract;
-using CenoredIMS.Domain.Entities;
-using CenoredIMS.Domain.Settings;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.Extensions.DependencyInjection;
+using NamibianFA.Domain.Abstract;
+using NamibianFA.Domain.Entities;
+using NamibianFA.Domain.Settings;
+using NamibianFA.Core.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
-namespace CenoredIMS.Core.Configurations
+namespace NamibianFA.Core.Configurations
 {
     public static class DbContextExtension
     {
@@ -38,7 +38,6 @@ namespace CenoredIMS.Core.Configurations
 
             const string administratorRole = "Administrator";
             const string managerRole = "Manager";
-            const string masterRole = "Master";
             List<DefaultUser> defaultUserList = SeedData.DefaultUserSeed();
 
             await CreateRoles(rm);
@@ -53,9 +52,6 @@ namespace CenoredIMS.Core.Configurations
                         break;
                     case UserRoleEnum.Manager:
                         await AddDefaultRoleToDefaultUser(um, defaultUser, managerRole, user);
-                        break;
-                    case UserRoleEnum.Master:
-                        await AddDefaultRoleToDefaultUser(um, defaultUser, masterRole, user);
                         break;
                 }
                 
@@ -165,16 +161,16 @@ namespace CenoredIMS.Core.Configurations
                     Task.Run(async () =>
                     {
                         //Seeding tables
-                        if(!context.Item.Any())
-                        {
-                            await context.AddRangeAsync(SeedData.InventorySeed());
-                            changed = true;
-                        }
-                        if(!context.Employee.Any())
-                        {
-                            await context.AddRangeAsync(SeedData.EmployeeSeed());
-                            changed = true;
-                        }
+                        //if(!context.Item.Any())
+                        //{
+                        //    await context.AddRangeAsync(SeedData.InventorySeed());
+                        //    changed = true;
+                        //}
+                        //if(!context.Employee.Any())
+                        //{
+                        //    await context.AddRangeAsync(SeedData.EmployeeSeed());
+                        //    changed = true;
+                        //}
 
                     }).Wait();
 

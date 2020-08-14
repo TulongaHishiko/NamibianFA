@@ -1,6 +1,6 @@
-﻿using CenoredIMS.Core.Interfaces;
-using CenoredIMS.Domain.Abstract;
-using CenoredIMS.Domain.Entities;
+﻿using NamibianFA.Core.Interfaces;
+using NamibianFA.Domain.Abstract;
+using NamibianFA.Domain.Entities;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
-namespace CenoredIMS.Core.Repositories
+namespace NamibianFA.Core.Repositories
 {
     public class UserRepository : IUserRepository
     {

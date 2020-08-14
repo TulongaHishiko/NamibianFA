@@ -1,5 +1,5 @@
-﻿using CenoredIMS.Domain.Abstract;
-using CenoredIMS.Domain.Entities;
+﻿using NamibianFA.Domain.Abstract;
+using NamibianFA.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace CenoredIMS.Core.Data
+namespace NamibianFA.Core.Data
 {
     public class dContext : DbContext
     {
@@ -15,13 +15,7 @@ namespace CenoredIMS.Core.Data
         {
         }
 
-        public DbSet<Employee> Employee { get; set; }
-        public DbSet<Document> Document { get; set; }
-        public DbSet<DocumentStore> DocumentStore { get; set; }
-        public DbSet<Item> Item { get; set; }
-        public DbSet<SoftwareLicense> SoftwareLicense { get; set; }
-        public DbSet<ItemAssignment> ItemAssignment { get; set; }
-        public DbSet<InactiveItem> InactiveItem { get; set; }
+
 
         public override int SaveChanges()
         {
